@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2018",
     "lib": ["esnext"],
+    "module": "commonjs",
     "sourceMap": true,
     "isolatedModules": true,
     "strict": true,
@@ -14,5 +15,6 @@
     "baseUrl": "./",
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "**/*.spec.ts", "build/**/*.*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
