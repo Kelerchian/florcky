@@ -17,9 +17,9 @@ test("MapResourceLock should only run operation and lock the given resource for 
       resolveFunction = resolve;
     });
 
-  const promise = resourceLock.run(id, resource, operation);
   resourceLock.events.subscribe("locked", () => lockCount++);
   resourceLock.events.subscribe("unlocked", () => unlockCount++);
+  const promise = resourceLock.run(id, resource, operation);
 
   t.is(null, resourceLock.run(id, resource, operation));
   t.is(null, resourceLock.run(id, resource, operation));
