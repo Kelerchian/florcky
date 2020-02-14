@@ -4,6 +4,7 @@
   "description": "Fork and lock TypeScript library",
   "main": "build/index.js",
   "scripts": {
+    "build-umd": "npx tsc --module umd --isolatedModules false --outDir ./build/umd",
     "build": "npx tsc",
     "clean": "rimraf ./build",
     "test": "ava -v"
