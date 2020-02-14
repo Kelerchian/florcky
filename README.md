@@ -13,6 +13,10 @@ Florcky package provides 4 different functionalities:
 - mapCache: Map based resource caching with expiry
 - MapResourceLock: Map and Promise based resource lock
 
+## Usage Examples
+
+Examples are available in [examples](examples) 
+
 ## TypedEvent
 
 TypedEvent is EventEmitter like class with strict TypeScript type feature to list its events.
